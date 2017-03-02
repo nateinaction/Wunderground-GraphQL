@@ -6,7 +6,7 @@
 2. `cd ./Wunderground-GraphQL`
 3. `mkdir ./secrets`
 4. `echo "YOUR_WUNDERGROUND_API_KEY" > ./secrets/api-key`
-5  `npm start`
+5. `npm start`
 
 ## License
 GNU GPLv3
