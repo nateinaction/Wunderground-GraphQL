@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://nateinaction@github.com/nateinaction/Wunderground-GraphQL.git",
   "author": "Nate Gay <nate@ohnate.com>",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "dependencies": {
     "cors": "^2.8.1",
     "express": "^4.14.0",
