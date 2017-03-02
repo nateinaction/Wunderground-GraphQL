@@ -1,0 +1,20 @@
+{
+  "name": "wunderground-graphql",
+  "version": "1.0.0",
+  "description": "GraphQL endpoint for Weather Underground",
+  "main": "index.js",
+  "repository": "https://nateinaction@github.com/nateinaction/Wunderground-GraphQL.git",
+  "author": "Nate Gay <nate@ohnate.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.2",
+    "graphql": "^0.9.1",
+    "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src/server.js"
+  }
+}
