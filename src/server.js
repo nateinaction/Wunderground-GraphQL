@@ -7,11 +7,15 @@ var corsConfig = require('./cors')
 var weatherSchema = require('./schema')
 
 var app = express()
+var port = 3000
 
 app.use('/', cors(corsConfig), graphQLHTTP({
   schema: weatherSchema,
   graphiql: true
 }))
 
-app.listen(3000)
-console.log('running at localhost:3000')
+app.listen(port, () => {
+  console.log('Running at localhost:' + port)
+})
+
+module.exports = app

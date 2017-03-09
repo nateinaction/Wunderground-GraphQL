@@ -13,8 +13,11 @@
     "graphql": "^0.9.1",
     "node-fetch": "^1.6.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
   "scripts": {
-    "start": "node ./src/server.js"
+    "start": "node ./src/server.js",
+    "test": "jest"
   }
 }
