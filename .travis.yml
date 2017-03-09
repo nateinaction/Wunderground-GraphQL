@@ -9,11 +9,11 @@ services:
 
 before_install:
   - echo "Building Container"
-  - docker build -t nateinaction/wunderground-graphql .
+  - docker build -t nateinaction/wunderground-graphql:latest .
 
 after_success:
   - echo "Pushing to Docker Hub"
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker push USER/REPO;
+    docker push nateinaction/wunderground-graphql;
     fi
