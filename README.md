@@ -31,12 +31,11 @@
 5. `echo "YOUR_WUNDERGROUND_API_KEY" > ./secrets/api-key`
 6. `npm start`
 
-## Local build
-1. `docker build -t wunderground-graphql .`
-2. `docker run -tp 8080:8080 wunderground-graphql`
+## Local test
+- `heroku local web`
 
-## Deploy to Google App Engine
-- `gcloud app deploy`
+## Deploy to Heroku
+- Just push a new version to Master
 
 ### Learn more about GraphQL
 [What is this GraphQL thing anyways?](http://graphql.org/learn/)

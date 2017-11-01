@@ -7,7 +7,7 @@ var GraphQLString = require('graphql').GraphQLString
 var GraphQLList = require('graphql').GraphQLList
 var GraphQLInt = require('graphql').GraphQLInt
 
-var apiKey = fs.readFileSync(__dirname + '/../secrets/api-key', 'utf8').trim();
+var apiKey = process.env.APIKEY || fs.readFileSync(__dirname + '/../secrets/api-key', 'utf8').trim();
 var apiUrl = 'https://api.wunderground.com/api/' + apiKey
 
 var TimeType = new GraphQLObjectType({

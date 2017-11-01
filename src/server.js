@@ -7,7 +7,7 @@ var corsConfig = require('./cors')
 var weatherSchema = require('./schema')
 
 var app = express()
-var port = 8080
+var port = process.env.PORT || 8080
 
 app.use('/', cors(corsConfig), graphQLHTTP({
   schema: weatherSchema,
